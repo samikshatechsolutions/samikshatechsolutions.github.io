@@ -1,0 +1,902 @@
+/* Hero Section */
+.consulting-hero {
+    background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
+    color: white;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.consulting-hero .container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-badge {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.badge {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.highlight {
+    color: #4fc3f7;
+    position: relative;
+}
+
+.highlight:after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: rgba(79, 195, 247, 0.2);
+    z-index: -1;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    color: #bbdefb;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    max-width: 700px;
+}
+
+.hero-metrics {
+    display: flex;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+.metric {
+    text-align: center;
+}
+
+.metric-value {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #4fc3f7;
+    margin-bottom: 5px;
+}
+
+.metric-label {
+    color: #bbdefb;
+    font-size: 0.95rem;
+    max-width: 150px;
+}
+
+.btn-large {
+    padding: 18px 40px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+}
+
+.hero-visual {
+    flex: 1;
+}
+
+.strategy-framework {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.framework-node {
+    width: 200px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.framework-node:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.framework-node i {
+    font-size: 2.5rem;
+    color: #4fc3f7;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.framework-node span {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.connector {
+    width: 2px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Business Analysis Focus */
+.business-analysis-focus {
+    padding: 80px 0;
+    background: #f5f7ff;
+}
+
+.analysis-approach {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.approach-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.approach-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+.approach-icon {
+    width: 70px;
+    height: 70px;
+    background: #e3f2fd;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.approach-icon i {
+    font-size: 2.5rem;
+    color: #1a237e;
+}
+
+.approach-card h3 {
+    color: #1a237e;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.approach-card > p {
+    color: #546e7a;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.approach-list {
+    list-style: none;
+    padding: 0;
+}
+
+.approach-list li {
+    padding: 10px 0;
+    color: #455a64;
+    border-bottom: 1px solid #eceff1;
+    position: relative;
+    padding-left: 25px;
+}
+
+.approach-list li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #4fc3f7;
+    font-weight: bold;
+}
+
+/* Consulting Services */
+.consulting-services {
+    padding: 80px 0;
+    background: white;
+}
+
+.tabs-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #e3f2fd;
+    padding-bottom: 10px;
+}
+
+.tab-link {
+    padding: 15px 25px;
+    background: #f5f7ff;
+    border: none;
+    border-radius: 10px 10px 0 0;
+    font-weight: 600;
+    color: #546e7a;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.tab-link.active {
+    background: #1a237e;
+    color: white;
+}
+
+.tab-link:hover:not(.active) {
+    background: #e3f2fd;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+.tab-content-wrapper {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.tab-info {
+    flex: 2;
+}
+
+.tab-description {
+    font-size: 1.2rem;
+    color: #546e7a;
+    margin-bottom: 30px;
+}
+
+.deliverables h4 {
+    color: #1a237e;
+    margin-bottom: 15px;
+}
+
+.deliverables ul {
+    list-style: none;
+    padding: 0;
+}
+
+.deliverables li {
+    padding: 12px 0;
+    border-bottom: 1px solid #eceff1;
+    color: #455a64;
+    display: flex;
+    align-items: flex-start;
+}
+
+.deliverables strong {
+    color: #1a237e;
+    min-width: 200px;
+    display: inline-block;
+}
+
+.business-impact {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 2px solid #e3f2fd;
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.impact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background: #f5f7ff;
+    border-radius: 10px;
+}
+
+.impact-icon {
+    width: 50px;
+    height: 50px;
+    background: #1a237e;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.impact-text {
+    flex: 1;
+}
+
+.impact-text strong {
+    color: #1a237e;
+}
+
+.tab-visual {
+    flex: 1;
+    min-width: 300px;
+}
+
+.strategy-timeline {
+    background: #f5f7ff;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.timeline-phase {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e3f2fd;
+}
+
+.timeline-phase:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.phase-number {
+    width: 40px;
+    height: 40px;
+    background: #1a237e;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.phase-content h5 {
+    color: #1a237e;
+    margin-bottom: 5px;
+}
+
+.phase-content p {
+    color: #546e7a;
+    font-size: 0.9rem;
+}
+
+/* Business Analysis Framework */
+.ba-framework {
+    padding: 80px 0;
+    background: #f5f7ff;
+}
+
+.framework-stages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.stage {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.stage:hover {
+    transform: translateY(-10px);
+}
+
+.stage-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.stage-number {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1a237e;
+}
+
+.stage-icon {
+    width: 50px;
+    height: 50px;
+    background: #e3f2fd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stage-icon i {
+    font-size: 1.5rem;
+    color: #1a237e;
+}
+
+.stage h3 {
+    color: #1a237e;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.stage > p {
+    color: #546e7a;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.stage-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.tool-tag {
+    background: #f5f7ff;
+    color: #1a237e;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.stage-output {
+    padding-top: 15px;
+    border-top: 2px solid #e3f2fd;
+    color: #546e7a;
+    font-size: 0.9rem;
+}
+
+.stage-output strong {
+    color: #1a237e;
+}
+
+/* Industry Solutions */
+.industry-solutions {
+    padding: 80px 0;
+    background: white;
+}
+
+.industry-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.industry-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    border: 2px solid #e3f2fd;
+    transition: transform 0.3s ease;
+}
+
+.industry-card:hover {
+    transform: translateY(-10px);
+    border-color: #1a237e;
+}
+
+.industry-header {
+    padding: 25px;
+    background: #f5f7ff;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.industry-header i {
+    font-size: 2rem;
+    color: #1a237e;
+}
+
+.industry-header h3 {
+    color: #1a237e;
+    margin: 0;
+}
+
+.industry-challenges, .industry-solution {
+    padding: 25px;
+}
+
+.industry-challenges h4, .industry-solution h4 {
+    color: #1a237e;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.industry-challenges ul {
+    list-style: none;
+    padding: 0;
+}
+
+.industry-challenges li {
+    padding: 8px 0;
+    color: #455a64;
+    border-bottom: 1px solid #eceff1;
+    position: relative;
+    padding-left: 20px;
+}
+
+.industry-challenges li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #4fc3f7;
+}
+
+.industry-solution p {
+    color: #546e7a;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.solution-impact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.impact-badge {
+    background: #e8f5e9;
+    color: #2e7d32;
+    padding: 8px 15px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Tools & Methodologies */
+.tools-methodologies {
+    padding: 80px 0;
+    background: #f5f7ff;
+}
+
+.methodology-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.methodology-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.methodology-icon {
+    font-size: 2.5rem;
+    color: #1a237e;
+    margin-bottom: 20px;
+}
+
+.methodology-card h3 {
+    color: #1a237e;
+    margin-bottom: 25px;
+}
+
+.tools-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.tool-item {
+    padding: 15px;
+    background: #f5f7ff;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.tool-item:hover {
+    transform: translateX(10px);
+    background: #e3f2fd;
+}
+
+.tool-name {
+    font-weight: 600;
+    color: #1a237e;
+    margin-bottom: 5px;
+}
+
+.tool-purpose {
+    color: #546e7a;
+    font-size: 0.9rem;
+}
+
+.certifications {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.certifications h3 {
+    color: #1a237e;
+    margin-bottom: 30px;
+}
+
+.cert-badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.cert-badge {
+    background: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    color: #1a237e;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cert-badge i {
+    color: #ffb300;
+}
+
+/* Business Assessment */
+.business-assessment {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
+    color: white;
+}
+
+.assessment-container {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.assessment-content {
+    flex: 2;
+}
+
+.assessment-content h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+.assessment-subtitle {
+    font-size: 1.2rem;
+    color: #bbdefb;
+    margin-bottom: 50px;
+}
+
+.assessment-process {
+    margin-bottom: 40px;
+}
+
+.process-step {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.step-icon {
+    width: 50px;
+    height: 50px;
+    background: #4fc3f7;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.step-details h4 {
+    color: white;
+    margin-bottom: 5px;
+}
+
+.step-details p {
+    color: #bbdefb;
+    font-size: 0.95rem;
+}
+
+.assessment-value {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 15px;
+    margin: 40px 0;
+    backdrop-filter: blur(10px);
+}
+
+.assessment-value h4 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.assessment-value h4 i {
+    color: #ffb300;
+}
+
+.assessment-value p {
+    color: #bbdefb;
+    font-size: 0.95rem;
+}
+
+.btn-gradient {
+    background: linear-gradient(90deg, #4fc3f7, #2979ff);
+    border: none;
+    padding: 20px 40px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.assessment-form {
+    flex: 1;
+    min-width: 350px;
+}
+
+.form-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    color: #1a237e;
+}
+
+.form-card h3 {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #1a237e;
+}
+
+.form-group select,
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e3f2fd;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #455a64;
+    transition: border-color 0.3s ease;
+}
+
+.form-group select:focus,
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #1a237e;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .consulting-hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-metrics {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .strategy-framework {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+    
+    .framework-node {
+        width: 150px;
+    }
+    
+    .connector {
+        width: 30px;
+        height: 2px;
+    }
+    
+    .tab-content-wrapper {
+        flex-direction: column;
+    }
+    
+    .assessment-container {
+        flex-direction: column;
+    }
+    
+    .assessment-form {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .tabs-nav {
+        flex-direction: column;
+    }
+    
+    .tab-link {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .industry-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .methodology-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cert-badges {
+        flex-direction: column;
+        align-items: center;
+    }
+}
