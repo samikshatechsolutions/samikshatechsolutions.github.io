@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f9fc;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #0d2b6e 0%, #1a3a8f 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+        
+        .logo {
+            height: 60px;
+            width: 60px;
+            background-color: white;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            color: #1a3a8f;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .effective-date {
+            background-color: #e9eff9;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 25px 0;
+            text-align: center;
+            border-left: 4px solid #2d5cc2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .date-badge {
+            background-color: #2d5cc2;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        
+        .toc-container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 40px;
+        }
+        
+        h2 {
+            color: #1a3a8f;
+            border-bottom: 2px solid #e9eff9;
+            padding-bottom: 10px;
+            margin: 40px 0 20px;
+            font-size: 1.8rem;
+        }
+        
+        h2:first-of-type {
+            margin-top: 0;
+        }
+        
+        h3 {
+            color: #2d5cc2;
+            margin: 25px 0 12px;
+            font-size: 1.4rem;
+        }
+        
+        h4 {
+            color: #3a6cd6;
+            margin: 20px 0 10px;
+            font-size: 1.2rem;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        ul, ol {
+            margin-left: 25px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        .definition-box {
+            background-color: #f0f7ff;
+            border: 1px solid #d1e0ff;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+        
+        .definition-box h4 {
+            margin-top: 0;
+            color: #1a3a8f;
+        }
+        
+        .important-note {
+            background-color: #fff8e6;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .warning-box {
+            background-color: #ffeaea;
+            border-left: 4px solid #dc3545;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .section-number {
+            display: inline-block;
+            background-color: #1a3a8f;
+            color: white;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 36px;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        
+        .table-of-contents {
+            background-color: #f0f7ff;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .table-of-contents h3 {
+            margin-top: 0;
+        }
+        
+        .toc-list {
+            columns: 2;
+            column-gap: 40px;
+        }
+        
+        .toc-list li {
+            margin-bottom: 8px;
+            break-inside: avoid;
+        }
+        
+        .toc-list a {
+            color: #2d5cc2;
+            text-decoration: none;
+        }
+        
+        .toc-list a:hover {
+            text-decoration: underline;
+        }
+        
+        .contact-info {
+            background-color: #e9eff9;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        
+        .contact-info h3 {
+            margin-top: 0;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 25px 0;
+            color: #666;
+            border-top: 1px solid #ddd;
+            margin-top: 30px;
+        }
+        
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        
+        .nav-link {
+            margin: 0 15px;
+            color: #2d5cc2;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+        
+        .acceptance-box {
+            background-color: #f0f7ff;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 30px 0;
+            text-align: center;
+            border: 2px solid #2d5cc2;
+        }
+        
+        .acceptance-box h3 {
+            color: #1a3a8f;
+        }
+        
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #2d5cc2;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            z-index: 100;
+            display: none;
+        }
+        
+        .back-to-top:hover {
+            background-color: #1a3a8f;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .toc-container {
+                padding: 20px;
+            }
+            
+            .toc-list {
+                columns: 1;
+            }
+            
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .nav-link {
+                margin: 5px 0;
+            }
+            
+            .section-number {
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                font-size: 0.9rem;
+            }
+        }
+        
+        .signature-section {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 2px dashed #ddd;
+        }
+        
+        .signature-line {
+            margin-top: 50px;
+        }
+        
+        .signature-field {
+            border-bottom: 1px solid #333;
+            width: 300px;
+            height: 30px;
+            margin: 20px 0;
+        }
+        
+        .service-category {
+            background-color: #f8faff;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 3px solid #2d5cc2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo">STS</div>
+                <h1>Samiksha Tech Solutions</h1>
+            </div>
+            <p class="subtitle">Terms and Conditions for IT Services including Software Development, Infrastructure, Consulting, and Cloud Solutions</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="effective-date">
+            <strong>Effective Date:</strong> <span class="date-badge">March 15, 2023</span>
+            <strong>Version:</strong> <span class="date-badge">2.1</span>
+        </div>
+        
+        <div class="table-of-contents">
+            <h3>Table of Contents</h3>
+            <ol class="toc-list">
+                <li><a href="#section1">Definitions</a></li>
+                <li><a href="#section2">Scope of Services</a></li>
+                <li><a href="#section3">Engagement Process</a></li>
+                <li><a href="#section4">Fees and Payment Terms</a></li>
+                <li><a href="#section5">Intellectual Property Rights</a></li>
+                <li><a href="#section6">Confidentiality</a></li>
+                <li><a href="#section7">Data Protection and Security</a></li>
+                <li><a href="#section8">Warranties and Disclaimers</a></li>
+                <li><a href="#section9">Limitation of Liability</a></li>
+                <li><a href="#section10">Term and Termination</a></li>
+                <li><a href="#section11">Governing Law and Dispute Resolution</a></li>
+                <li><a href="#section12">Miscellaneous Provisions</a></li>
+            </ol>
+        </div>
+        
+        <div class="acceptance-box">
+            <h3>IMPORTANT: PLEASE READ THESE TERMS CAREFULLY</h3>
+            <p>By engaging Samiksha Tech Solutions for services, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions. If you are accepting on behalf of a business entity, you represent that you have the authority to bind that entity to these terms.</p>
+        </div>
+        
+        <div class="toc-container">
+            <h2><span class="section-number">1</span> <span id="section1">Definitions</span></h2>
+            
+            <div class="definition-box">
+                <h4>Key Terms Used in This Agreement</h4>
+                <p><strong>"Client"</strong> means the business entity engaging Samiksha Tech Solutions for services.</p>
+                <p><strong>"Services"</strong> refers to the IT services provided, including but not limited to software development, IT infrastructure, IT consulting, and cloud solutions.</p>
+                <p><strong>"Deliverables"</strong> means any work product, software, documentation, or materials created by Samiksha Tech Solutions for the Client.</p>
+                <p><strong>"Project"</strong> means a specific engagement with defined scope, timeline, and deliverables.</p>
+                <p><strong>"SOW"</strong> (Statement of Work) means a document that describes the specific services, deliverables, timeline, and fees for a Project.</p>
+                <p><strong>"Confidential Information"</strong> means any non-public information disclosed by either party to the other.</p>
+            </div>
+            
+            <h2><span class="section-number">2</span> <span id="section2">Scope of Services</span></h2>
+            
+            <h3>2.1 Service Categories</h3>
+            <p>Samiksha Tech Solutions provides the following categories of IT services to business clients:</p>
+            
+            <div class="service-category">
+                <h4>Software Development</h4>
+                <p>Custom software development, application modernization, mobile app development, and software maintenance services.</p>
+            </div>
+            
+            <div class="service-category">
+                <h4>IT Infrastructure</h4>
+                <p>Network design and implementation, server management, cybersecurity solutions, and infrastructure monitoring.</p>
+            </div>
+            
+            <div class="service-category">
+                <h4>IT Consulting</h4>
+                <p>Technology strategy, digital transformation, process optimization, and technical advisory services.</p>
+            </div>
+            
+            <div class="service-category">
+                <h4>Cloud Solutions</h4>
+                <p>Cloud migration, cloud architecture design, managed cloud services, and cloud security implementation.</p>
+            </div>
+            
+            <h3>2.2 Service Specifications</h3>
+            <p>The specific details of services to be provided will be outlined in one or more Statements of Work (SOWs) that reference these Terms and Conditions. Each SOW will include:</p>
+            <ul>
+                <li>Detailed description of services and deliverables</li>
+                <li>Project timeline and milestones</li>
+                <li>Acceptance criteria</li>
+                <li>Pricing and payment schedule</li>
+                <li>Resource allocation and team composition</li>
+            </ul>
+            
+            <div class="important-note">
+                <p><strong>Note:</strong> Any changes to the scope of services after an SOW is signed may result in adjustments to timelines, deliverables, and fees, subject to a formal change order process.</p>
+            </div>
+            
+            <h2><span class="section-number">3</span> <span id="section3">Engagement Process</span></h2>
+            
+            <h3>3.1 Proposal and SOW</h3>
+            <p>Services commence upon mutual execution of an SOW. Each SOW constitutes a separate agreement incorporating these Terms.</p>
+            
+            <h3>3.2 Project Management</h3>
+            <p>Each Project will have designated project managers from both parties who will be responsible for communication, progress tracking, and issue resolution.</p>
+            
+            <h3>3.3 Acceptance of Deliverables</h3>
+            <p>The Client shall have 10 business days from receipt of a Deliverable to provide written acceptance or specify deficiencies. If no response is received within this period, the Deliverable will be deemed accepted.</p>
+            
+            <h2><span class="section-number">4</span> <span id="section4">Fees and Payment Terms</span></h2>
+            
+            <h3>4.1 Fee Structure</h3>
+            <p>Fees may be structured as:</p>
+            <ul>
+                <li><strong>Fixed Price:</strong> For Projects with well-defined scope and deliverables</li>
+                <li><strong>Time and Materials:</strong> Based on actual hours worked at agreed rates</li>
+                <li><strong>Retainer:</strong> Monthly fee for ongoing services with defined scope</li>
+                <li><strong>Milestone-Based:</strong> Payments tied to completion of specific project milestones</li>
+            </ul>
+            
+            <h3>4.2 Payment Terms</h3>
+            <p>Unless otherwise specified in an SOW:</p>
+            <ul>
+                <li>Invoices are payable within 30 days of receipt</li>
+                <li>Late payments may incur interest at 1.5% per month or the maximum allowed by law</li>
+                <li>The Client is responsible for all taxes, duties, and government charges related to the Services</li>
+            </ul>
+            
+            <div class="warning-box">
+                <p><strong>Important:</strong> Samiksha Tech Solutions reserves the right to suspend services for accounts with invoices overdue by more than 45 days.</p>
+            </div>
+            
+            <h2><span class="section-number">5</span> <span id="section5">Intellectual Property Rights</span></h2>
+            
+            <h3>5.1 Client-Funded Development</h3>
+            <p>Upon full payment of all fees, the Client receives a perpetual, non-exclusive license to use Deliverables specifically created for the Client. For custom software, source code ownership is as specified in the SOW.</p>
+            
+            <h3>5.2 Pre-Existing IP</h3>
+            <p>Each party retains ownership of its pre-existing intellectual property. Samiksha Tech Solutions grants the Client a license to use any pre-existing IP incorporated into Deliverables as necessary to use the Deliverables.</p>
+            
+            <h3>5.3 Third-Party Components</h3>
+            <p>Software may include third-party open source or licensed components subject to their own license terms. The Client is responsible for compliance with such third-party licenses.</p>
+            
+            <h2><span class="section-number">6</span> <span id="section6">Confidentiality</span></h2>
+            
+            <p>Both parties agree to protect each other's Confidential Information with at least the same degree of care used to protect their own confidential information, but no less than reasonable care. Confidentiality obligations survive termination of these Terms for a period of 3 years.</p>
+            
+            <h2><span class="section-number">7</span> <span id="section7">Data Protection and Security</span></h2>
+            
+            <h3>7.1 Data Processing</h3>
+            <p>When Samiksha Tech Solutions processes personal data on behalf of the Client, the parties will enter into a Data Processing Agreement (DPA) in compliance with applicable data protection laws.</p>
+            
+            <h3>7.2 Security Standards</h3>
+            <p>Samiksha Tech Solutions implements industry-standard security measures including encryption, access controls, and regular security assessments. Specific security commitments will be detailed in the SOW or a separate security addendum.</p>
+            
+            <h3>7.3 Data Breach Notification</h3>
+            <p>In the event of a data breach affecting Client data, Samiksha Tech Solutions will notify the Client without undue delay and cooperate in investigation and remediation efforts.</p>
+            
+            <h2><span class="section-number">8</span> <span id="section8">Warranties and Disclaimers</span></h2>
+            
+            <h3>8.1 Service Warranty</h3>
+            <p>Samiksha Tech Solutions warrants that Services will be performed in a professional and workmanlike manner consistent with generally accepted industry standards.</p>
+            
+            <h3>8.2 Disclaimer of Other Warranties</h3>
+            <p>EXCEPT AS EXPRESSLY PROVIDED HEREIN, ALL SERVICES AND DELIVERABLES ARE PROVIDED "AS IS." SAMIKSHA TECH SOLUTIONS DISCLAIMS ALL OTHER WARRANTIES, EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.</p>
+            
+            <h3>8.3 Third-Party Services</h3>
+            <p>For services involving third-party platforms (e.g., AWS, Azure, Google Cloud), Samiksha Tech Solutions does not warrant the performance, availability, or security of such third-party services.</p>
+            
+            <h2><span class="section-number">9</span> <span id="section9">Limitation of Liability</span></h2>
+            
+            <h3>9.1 Direct Damages</h3>
+            <p>IN NO EVENT SHALL EITHER PARTY'S TOTAL LIABILITY ARISING FROM OR RELATED TO THESE TERMS EXCEED THE TOTAL FEES PAID OR PAYABLE BY THE CLIENT FOR THE SPECIFIC SERVICES GIVING RISE TO THE LIABILITY IN THE 12 MONTHS PRECEDING THE CLAIM.</p>
+            
+            <h3>9.2 Exclusion of Consequential Damages</h3>
+            <p>NEITHER PARTY SHALL BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING LOST PROFITS, LOST REVENUE, OR BUSINESS INTERRUPTION, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+            
+            <div class="important-note">
+                <p><strong>Note:</strong> These limitations do not apply to liability arising from (a) breach of confidentiality obligations, (b) infringement of intellectual property rights, or (c) personal injury or property damage caused by negligence.</p>
+            </div>
+            
+            <h2><span class="section-number">10</span> <span id="section10">Term and Termination</span></h2>
+            
+            <h3>10.1 Term</h3>
+            <p>These Terms remain in effect until terminated as provided herein. Individual SOWs have their own terms as specified in each agreement.</p>
+            
+            <h3>10.2 Termination for Cause</h3>
+            <p>Either party may terminate an SOW for material breach if the breaching party fails to cure the breach within 30 days of written notice.</p>
+            
+            <h3>10.3 Termination for Convenience</h3>
+            <p>The Client may terminate an SOW for convenience with 30 days written notice, subject to payment for all services rendered and any termination fees specified in the SOW.</p>
+            
+            <h3>10.4 Effect of Termination</h3>
+            <p>Upon termination, the Client shall pay for all services rendered up to the termination date. Each party shall return or destroy the other's Confidential Information as requested.</p>
+            
+            <h2><span class="section-number">11</span> <span id="section11">Governing Law and Dispute Resolution</span></h2>
+            
+            <h3>11.1 Governing Law</h3>
+            <p>These Terms shall be governed by and construed in accordance with the laws of the State of California, without regard to its conflict of laws principles.</p>
+            
+            <h3>11.2 Dispute Resolution</h3>
+            <p>The parties shall attempt to resolve any dispute through good faith negotiation. If unresolved after 30 days, either party may initiate mediation with a mutually agreeable mediator. If mediation fails, the parties may pursue legal remedies.</p>
+            
+            <h3>11.3 Venue</h3>
+            <p>Any legal action shall be brought in the state or federal courts located in San Francisco County, California, and both parties consent to personal jurisdiction in such courts.</p>
+            
+            <h2><span class="section-number">12</span> <span id="section12">Miscellaneous Provisions</span></h2>
+            
+            <h3>12.1 Entire Agreement</h3>
+            <p>These Terms, together with any SOWs and attached exhibits, constitute the entire agreement between the parties and supersede all prior agreements and understandings.</p>
+            
+            <h3>12.2 Amendments</h3>
+            <p>Any amendment to these Terms must be in writing and signed by authorized representatives of both parties.</p>
+            
+            <h3>12.3 Force Majeure</h3>
+            <p>Neither party shall be liable for failure to perform due to circumstances beyond its reasonable control, including acts of God, natural disasters, war, terrorism, or government actions.</p>
+            
+            <h3>12.4 Assignment</h3>
+            <p>Neither party may assign these Terms without the other party's prior written consent, except in connection with a merger, acquisition, or sale of substantially all assets.</p>
+            
+            <h3>12.5 Notices</h3>
+            <p>All notices shall be in writing and sent to the addresses specified in the SOW or as otherwise notified in writing.</p>
+            
+            <h3>12.6 Severability</h3>
+            <p>If any provision is found invalid or unenforceable, the remaining provisions shall remain in full force and effect.</p>
+            
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>For questions about these Terms and Conditions, please contact:</p>
+                <p><strong>Samiksha Tech Solutions Legal Department</strong></p>
+                <p><strong>Email:</strong> legal@samikshatechsolutions.com</p>
+                <p><strong>Phone:</strong> +91 9876 92 4411 ext. 2</p>
+                <p><strong>Address:</strong> NH 32 , Prayagraj Uttar Pradesh 230306</p>
+            </div>
+            
+            <div class="signature-section">
+                <h3>Acceptance of Terms</h3>
+                <p>By engaging Samiksha Tech Solutions for services, the Client acknowledges acceptance of these Terms and Conditions.</p>
+                
+                <div class="signature-line">
+                    <p><strong>For Samiksha Tech Solutions:</strong></p>
+                    <div class="signature-field"></div>
+                    <p>Authorized Signature</p>
+                </div>
+                
+                <div class="signature-line">
+                    <p><strong>For Client:</strong></p>
+                    <div class="signature-field"></div>
+                    <p>Authorized Signature</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="nav-links">
+            <a href="C:/Users/abhis/OneDrive/Desktop/sts/privacy.html" class="nav-link">Privacy Policy</a>
+            <a href="" class="nav-link">Data Processing Agreement</a>
+            <a href="#" class="nav-link">Service Level Agreement</a>
+            <a href="C:/Users/abhis/OneDrive/Desktop/sts/index.html#home" class="nav-link">Website</a>
+            <a href="C:/Users/abhis/OneDrive/Desktop/sts/index.html#contact" class="nav-link">Contact Sales</a>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Samiksha Tech Solutions. All rights reserved.</p>
+            <p>These Terms and Conditions govern the provision of IT services to business clients.</p>
+            <p><em>This document is provided for informational purposes and should be reviewed by legal counsel before use.</em></p>
+        </div>
+    </footer>
+    
+    <button class="back-to-top" id="backToTop">↑</button>
+    
+    <script>
+        // Back to top button functionality
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.style.display = 'flex';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Smooth scrolling for table of contents links
+        document.querySelectorAll('.toc-list a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Highlight the section briefly
+                    targetElement.style.backgroundColor = '#f0f7ff';
+                    targetElement.style.transition = 'background-color 1s';
+                    setTimeout(() => {
+                        targetElement.style.backgroundColor = '';
+                    }, 1000);
+                }
+            });
+        });
+        
+        // Highlight current section in view
+        const sections = document.querySelectorAll('h2');
+        const navLinks = document.querySelectorAll('.toc-list a');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (scrollY >= (sectionTop - 150)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                    link.style.fontWeight = 'bold';
+                    link.style.color = '#1a3a8f';
+                } else {
+                    link.style.fontWeight = '';
+                    link.style.color = '';
+                }
+            });
+        });
+        
+        // Print functionality
+        const printButton = document.createElement('button');
+        printButton.textContent = 'Print Terms';
+        printButton.style.cssText = 'position: fixed; bottom: 30px; left: 30px; background-color: #1a3a8f; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; z-index: 100;';
+        printButton.addEventListener('click', () => {
+            window.print();
+        });
+        document.body.appendChild(printButton);
+    </script>
+</body>
+</html>
