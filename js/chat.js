@@ -1,8 +1,15 @@
 // Sam Chatbot Widget - JavaScript
 class SamChatbot {
-    constructor() {
-        this.apiUrl = '/main/data.json';
+
+
+constructor() {
+        // 👇 CHANGE THESE TWO VALUES
+        const GITHUB_USERNAME = 'samikshatechsolutions';
+        const REPO_NAME = 'samikshatechsolutions';
+        
+        this.apiUrl = `https://raw.githubusercontent.com/${samikshatechsolutions}/${samikshatechsolutions}/main/data.json`;
         this.knowledgeBase = null;
+    
         this.initialize();
     }
 
