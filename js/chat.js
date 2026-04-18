@@ -1,7 +1,7 @@
 // Sam Chatbot Widget - JavaScript
 class SamChatbot {
     constructor() {
-        this.apiUrl = 'https://cdn.jsdelivr.net/gh/samikshatechsolutions/samikshatechsolutions@main/data.json';
+        this.apiUrl = '/main/data.json';
         this.knowledgeBase = null;
         this.initialize();
     }
