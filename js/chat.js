@@ -3,11 +3,9 @@ class SamChatbot {
 
 
 constructor() {
-        // 👇 CHANGE THESE TWO VALUES
-        const GITHUB_USERNAME = 'samikshatechsolutions';
-        const REPO_NAME = 'samikshatechsolutions';
         
-        this.apiUrl = `https://raw.githubusercontent.com/${samikshatechsolutions}/${samikshatechsolutions}/main/data.json`;
+        
+        this.apiUrl = 'https://samikshatechsolutions.github.io/data.json';
         this.knowledgeBase = null;
     
         this.initialize();
