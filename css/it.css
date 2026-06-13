@@ -519,6 +519,31 @@
             margin-bottom: 50px;
         }
 
+
+      /* Container alignment */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Spaces out the image and text */
+}
+
+/* Image logo sizing */
+.logo-img {
+  height: 40px; /* Adjust height to fit your design */
+  width: auto;  /* Maintains original aspect ratio */
+  object-fit: contain;
+}
+
+/* Typography for company name */
+.logo-text span {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff; /* Change this to match your footer background */
+  letter-spacing: 0.5px;
+}
+
+
         .footer-column h4 {
             color: var(--primary-white);
             margin-bottom: 25px;
