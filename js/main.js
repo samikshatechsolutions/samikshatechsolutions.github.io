@@ -118,61 +118,83 @@
             document.getElementById('signupForm').reset();
         });
        
-          // Initialize EmailJS with your Public Key
-        (function() {
-            emailjs.init("wDupG6js_T_vw7J4C"); // Replace with your EmailJS Public Key
-        })();
-        // Contact form submission
-        document.getElementById('contactForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            const formData = {
-                name: document.getElementById('name').value,
-                email: document.getElementById('email').value,
-                phone: document.getElementById('phone').value,
-                company: document.getElementById('company').value,
-                service: document.getElementById('service').value,
-                message: document.getElementById('message').value,
-                to_email: "samikshatechsolutions@email.com", // Replace with your business email
-                reply_to: document.getElementById('email').value
-            };
-            
-            // In a real application, you would send this to a server
-            console.log('Contact form submitted:', formData);
-            
+        // Initialize EmailJS with your Public Key
+(function() {
+    emailjs.init("wDupG6js_T_vw7J4C"); // Replace with your EmailJS Public Key
+})();
 
-            // Send email using EmailJS
-            emailjs.send(
-                "service_re49gop",     // Replace with your EmailJS Service ID
-                "template_1thmy54",    // Replace with your EmailJS Template ID
-                formData
-            )
-            .then(function(response) {
-                console.log('SUCCESS!', response.status, response.text);
-                
-                // Show success message
-                document.getElementById('successAlert').classList.remove('d-none');
-                
-                // Reset form
-                document.getElementById('contactForm').reset();
-            })
-            .catch(function(error) {
-                console.log('FAILED...', error);
-                
-                // Show error message
-                document.getElementById('errorAlert').classList.remove('d-none');
-            })
-            .finally(function() {
-                // Reset button state
-                submitBtn.disabled = false;
-                buttonText.textContent = "Submit";
-                spinner.classList.add('d-none');
-            });
-            // Show success message
-            alert('Thank you for your message! We will contact you within 24 hours.');
-            document.getElementById('contactForm').reset();
-        });
+// Contact form submission
+document.getElementById('contactForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    // Get form elements
+    const submitBtn = e.target.querySelector('button[type="submit"]');
+    const buttonText = submitBtn.querySelector('.button-text');
+    const spinner = submitBtn.querySelector('.spinner-border');
+    
+    // Disable button and show spinner
+    submitBtn.disabled = true;
+    if (buttonText) buttonText.textContent = "Sending...";
+    if (spinner) spinner.classList.remove('d-none');
+    
+    const formData = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        company: document.getElementById('company').value,
+        service: document.getElementById('service').value,
+        message: document.getElementById('message').value,
+        to_email: "samikshatechsolutions@email.com", // Replace with your business email
+        reply_to: document.getElementById('email').value
+    };
+    
+    try {
+        // Send email using EmailJS
+        const response = await emailjs.send(
+            "service_re49gop",     // Replace with your EmailJS Service ID
+            "template_1thmy54",    // Replace with your EmailJS Template ID
+            formData
+        );
         
+        console.log('SUCCESS!', response.status, response.text);
+        
+        // Hide any existing error message
+        document.getElementById('errorAlert').classList.add('d-none');
+        
+        // Show success message
+        const successAlert = document.getElementById('successAlert');
+        successAlert.classList.remove('d-none');
+        
+        // Auto-hide success message after 5 seconds
+        setTimeout(() => {
+            successAlert.classList.add('d-none');
+        }, 5000);
+        
+        // Reset form
+        document.getElementById('contactForm').reset();
+        
+    } catch(error) {
+        console.log('FAILED...', error);
+        
+        // Hide any existing success message
+        document.getElementById('successAlert').classList.add('d-none');
+        
+        // Show error message
+        const errorAlert = document.getElementById('errorAlert');
+        errorAlert.classList.remove('d-none');
+        
+        // Auto-hide error message after 5 seconds
+        setTimeout(() => {
+            errorAlert.classList.add('d-none');
+        }, 5000);
+        
+    } finally {
+        // Re-enable button and hide spinner
+        submitBtn.disabled = false;
+        if (buttonText) buttonText.textContent = "Submit";
+        if (spinner) spinner.classList.add('d-none');
+    }
+});  
         
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
