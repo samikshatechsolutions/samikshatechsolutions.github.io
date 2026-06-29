@@ -153,6 +153,13 @@
             align-items: center;
         }
 
+         /* Image logo sizing */
+.logo-img {
+  height: 40px; /* Adjust height to fit your design */
+  width: auto;  /* Maintains original aspect ratio */
+  object-fit: contain;
+}
+
         .logo i {
             color: var(--primary-red);
             font-size: 2.2rem;
